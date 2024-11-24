@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - My Self-Presentation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">Главная страница</a></li>
+      <li><a href="about.html">Обо мне</a></li>
+      <li><a href="portfolio.html">Портфолио</a></li>
+      <li><a href="contact.html">Связь со мной</a></li>
+    </ul>
+  </nav>
+  <section id="contact">
+    <h2>Форма связи</h2>
+    <form id="contactForm">
+      <label for="name">Имя:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Сообщение:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Отправить</button>
+    </form>
+    <div id="notification" style="display: none; color: green; margin-top: 10px;">
+      Сообщение успешно отправлено!
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
